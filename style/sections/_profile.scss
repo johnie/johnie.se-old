@@ -1,9 +1,9 @@
-/*------------------------------------* 
-   $PROFILE 
+/*------------------------------------*
+   $PROFILE
 *------------------------------------*/
 
-/** 
- * Profile Excerpt 
+/**
+ * Profile Excerpt
  */
 .profile-excerpt{
   background-color: $base-ui-color;
@@ -36,8 +36,8 @@
 
 
 
-/** 
- * Main Profile 
+/**
+ * Main Profile
  */
 .profile{
   min-height: 500px;
@@ -69,24 +69,32 @@
   }
 }
 
-.profile-header{
+.section-header{
   margin-bottom: 2em;
   text-align: center;
   @extend .cf;
+
+  &.section-header--negative{
+    color: #fff;
+
+    .section-title__desc{
+      border-bottom-color: #fff;
+    }
+  }
 }
 
-.profile-header__inner{
+.section-header__inner{
   display: inline-block;
 }
 
-.profile-title{
+.section-title{
   text-transform: uppercase;
   font-size: 1.8em;
   margin: 0;
   letter-spacing: 2px;
 }
 
-.profile-title__desc{
+.section-title__desc{
   font-family: $second-font-family;
   font-style: italic;
   font-size: .9em;

@@ -1,14 +1,18 @@
-<hgroup class="profile-header">
-  <div class="profile-header__inner">
-    <h3 class="profile-title">My story</h3>
-    <small class="profile-title__desc">a brief history</small>
+<hgroup class="section-header">
+  <div class="section-header__inner">
+    <h3 class="section-title">My story</h3>
+    <small class="section-title__desc">a brief history</small>
   </div>
 </hgroup>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, id, iusto, at rerum corporis recusandae libero deserunt nostrum explicabo nihil blanditiis culpa harum cum asperiores similique veniam alias minima delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, facere, veritatis, optio consequatur incidunt nisi culpa accusamus inventore dolore officiis vitae itaque officia vel unde excepturi consectetur tempora dicta quisquam?
+The story begins about <span class="seconds-counter">1</span> ago. You clicked a mechanical button, or you tapped on a slab of glass, and you wound up here. Now that I have about 25% of your attention. You're thinking about checking Facebook again, what's new on Twitter, who is having kebab for lunch again or maybe the growing pile of work on your desk.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, totam, commodi, qui architecto sequi perferendis laboriosam voluptate distinctio eaque amet ut pariatur perspiciatis reprehenderit ad sed obcaecati ratione minima iusto.
+I am someone who aspires to positively change the world someday, I drink coffee like it’s religious holy water, and may have an unhealthy obsession with my work. But creating is not just a job for me, it’s a passion. My mission in life is to create awesome things and enjoy each moment of it.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, velit, quod perferendis illo autem neque voluptate hic. Adipisci, debitis, expedita, in odit aut fugit amet dignissimos eligendi facilis veritatis illum.
+I see myself as a hybrid designer-developer and a humble know-it-all, who likes to read about Entrepreneurship to my morning coffee, advanced JavaScript Design Patterns at day, and about WWII Heros at night.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, facere, tenetur, consequuntur est quos placeat blanditiis architecto quaerat eos nemo odit praesentium corporis veritatis ab iure sint sed nulla quasi ut reiciendis minima fugiat ratione ad unde itaque inventore esse voluptatibus. Eius, ullam, accusantium eligendi laboriosam repudiandae facilis delectus quam quasi non illum consequatur quia eum repellendus id voluptatibus aliquid dolorem veritatis inventore dignissimos consectetur totam unde perspiciatis accusamus magni dicta? Aperiam, tempore, dignissimos, nesciunt commodi id mollitia ut iusto delectus officiis perferendis voluptate accusamus aliquid ratione molestias ipsum. Similique facilis nemo nesciunt itaque iste rerum eius maiores! Voluptates, enim, cum aut sint iste et illum error facilis quasi odit eum necessitatibus sit voluptatem harum ea recusandae incidunt suscipit facere quas rerum eaque. Quo fugit recusandae omnis explicabo beatae sed possimus similique alias officiis distinctio! Dolores, sunt aspernatur adipisci aperiam quo doloremque beatae minus temporibus cupiditate. Temporibus, culpa sunt atque minima optio laborum quos tenetur qui quod expedita commodi architecto placeat obcaecati sed modi iste veritatis ipsam voluptatem doloremque perferendis. Fuga, enim, laborum, beatae amet deleniti impedit sapiente repellendus dolore iure neque totam nobis temporibus. Assumenda, non dicta maiores! Eveniet, explicabo commodi id suscipit quod hic ipsum iure odit nesciunt!
+I try to make the websites I design and build as simple and intuitive to use as possible whilst still having a unique aesthetic appeal. I specialise in responsive front-end design, HTML/CSS and JavaScript. I also believe in cutting edge web technologies, and care for semantics and accessibility. Which means I usually build the things I design, though I don't build things designed by others.
+
+You have to take risks in order to move forward — I feel very passionate about that. I always say that if you feel uncomfortable, then you know you’re doing something right. Creating digital experiences that promote interaction. I think bigger, move faster, blow minds, get shit done and innovate — plus any other cliché saying that comes to mind.
+
+I'll be happy to meet new people so don't be hesitate if you want to talk about design, music, entrepreneurship, beer or if you just want to say hello, you can always send me an email at [johnie@hjelm.im](mailto:johnie@hjelm.im)

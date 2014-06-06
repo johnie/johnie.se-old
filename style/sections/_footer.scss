@@ -1,0 +1,113 @@
+/*------------------------------------*
+   $FOOTER
+*------------------------------------*/
+
+.footer{
+  padding-top: 20%;
+  background: $base-ui-color--light url('images/footer.png') top center no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  @extend .cf;
+}
+
+.footer__inner{
+  padding: 2em 2em .5em 2em;
+
+  a{
+    color: $base-ui-color;
+    font-weight: 600;
+
+    &:hover{
+      color: $brand-color;
+    }
+  }
+
+  p{
+    margin: 0;
+  }
+}
+
+.copyright-title{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin: 0;
+  color: $base-ui-color;
+}
+
+.copyright-desc{
+  font-weight: 500;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+.copyright-text{
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .7em;
+  line-height: 1.2;
+}
+
+.address{
+  padding-left: 2em;
+  margin: 0;
+
+  strong{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  p{
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 5px;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+}
+
+.footer-title{
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.social-item{
+  width: 2em;
+  height: 2em;
+  color: #fff;
+  background-color: $base-ui-color;
+  text-indent: -9999px;
+  @include vendor(border-radius, 2em);
+}
+
+
+/**
+ * Social icons
+ */
+$social-icons: twitter #1BB2E9, facebook #3C599B, github #323031, linkedin #00649D, instagram #2C668C, spotify #90B436;
+
+@each $icons in $social-icons {
+  $icon: nth($icons, 1);
+  $color: nth($icons, 2);
+
+  .social-item--#{$icon}{
+    background: $base-ui-color url("images/#{$icon}.svg") center center no-repeat;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+    @include vendor(transition, background-color .2s ease);
+
+    &:hover{
+      background-color: $color;
+      border-bottom: none;
+    }
+  }
+}

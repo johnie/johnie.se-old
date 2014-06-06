@@ -1,6 +1,7 @@
 # Site data
 name: Johnie Hjelm
 title: Human interface designer & front end developer
+wired: Wired In AB
 baseurl: ""
 journal: http://johniehjelm.me
 
@@ -11,7 +12,7 @@ github: johnie
 
 # Build settings
 markdown: kramdown
-permalinks: /blog/:title
+permalinks: /:title
 timezone: Europe/Stockholm
 
 # Includes / Exclude

@@ -1,0 +1,87 @@
+/*------------------------------------*
+   $INSTA
+*------------------------------------*/
+
+.instagram{
+  position: relative;
+  width: 100%;
+  @extend .cf;
+
+  &:before{
+    content: '';
+    display: block;
+    background: $brand-color url('images/instagram.svg') center center no-repeat;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+    width: 2.4em;
+    height: 2.4em;
+    position: absolute;
+    top: -1.2em;
+    left: 50%;
+    border-radius: 2em;
+    @include vendor(transform, translateX(-50%));
+    z-index: 5;
+  }
+}
+
+.insta{
+  float: left;
+  width: 25%;
+  position: relative;
+  @extend .cf;
+  margin-bottom: 0;
+
+  &:before{
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 1;
+  }
+}
+
+.insta-content{
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  @include vendor(transform, translateY(-50%));
+  z-index: 5;
+  color: #fff;
+}
+
+.insta-title{
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.insta-desc{
+  font-family: $second-font-family;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 0;
+}

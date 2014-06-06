@@ -6,11 +6,32 @@ html{
     overflow-y:scroll;
     min-height:100%;
     text-rendering: optimizeLegibility;
+    color: $base-ui-color;
+}
+
+::selection{
+  background-color: $base-ui-color;
+  color: #fff;
+}
+
+::-webkit-selection{
+  background-color: $base-ui-color;
+  color: #fff;
+}
+
+::-moz-selection{
+  background-color: $base-ui-color;
+  color: #fff;
 }
 
 a{
   color: $brand-color;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  &:hover{
+    border-bottom: 1px solid $brand-color;
+  }
 }
 
 .site-name{
@@ -24,5 +45,11 @@ a{
   a{
     color: #fff;
     text-decoration: none;
+    @include vendor(transition, color .2s ease);
+
+    &:hover{
+      border-bottom: none;
+      color: $brand-color;
+    }
   }
 }

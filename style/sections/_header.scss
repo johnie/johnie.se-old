@@ -1,8 +1,8 @@
-/*------------------------------------* 
-   $HEADER 
+/*------------------------------------*
+   $HEADER
 *------------------------------------*/
-/** 
- * Main .header modifiers 
+/**
+ * Main .header modifiers
  */
 
 .header{
@@ -40,6 +40,7 @@
   &.active{
     background-color: rgba(255, 255, 255, .85);
     padding: .8em 1.5em;
+    border-bottom: 1px solid lighten($base-ui-color, 60%);
 
     a{
       &:hover{
