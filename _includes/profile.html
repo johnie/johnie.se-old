@@ -1,0 +1,18 @@
+<section id="profile">
+  <div class="profile-excerpt">
+    <div class="profile-excerpt__inner">
+      {% markdown excerpt.md %}
+    </div>
+  </div>
+
+  <article class="article profile">
+    <div class="grid">
+      <div class="grid__item one-third profile__image"></div>
+      <div class="grid__item two-thirds profile__content">
+        <div class="profile__content-inner">
+          {% markdown main.md %}
+        </div>
+      </div>
+    </div>
+  </article>
+</section>

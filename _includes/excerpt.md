@@ -1,0 +1,1 @@
+**Hi! I'm Johnie.** I'm a human interface designer & front end developer. I have a passion for pixel perfect, minimal & easy to use interfaces. The simple act of creating makes me happy, and I’m not doing it for any other reason than that. [Let me tell you my story ›](#story)

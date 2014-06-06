@@ -1,0 +1,98 @@
+/*------------------------------------* 
+   $PROFILE 
+*------------------------------------*/
+
+/** 
+ * Profile Excerpt 
+ */
+.profile-excerpt{
+  background-color: $base-ui-color;
+  color: #fff;
+  height: 250px;
+  position: relative;
+  @extend .cf;
+}
+
+.profile-excerpt__inner{
+  display: inline-block;
+  width: 100%;
+  max-width: 850px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  @include vendor(transform, translate(-50%, -50%));
+
+  p{
+    font-size: 1.5em;
+    margin-bottom: 0;
+    font-weight: 300;
+
+    strong{
+      font-weight: 500;
+    }
+  }
+}
+
+
+
+/** 
+ * Main Profile 
+ */
+.profile{
+  min-height: 500px;
+  position: relative;
+  @extend .cf;
+}
+
+.profile__image{
+  background: $base-ui-color url('images/johnie_left.png') center top no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.profile__content{
+  float: right;
+}
+
+.profile__content-inner{
+  padding: 2.5em;
+
+  p{
+    font-size: 1.2em;
+    line-height: 1.68;
+    font-weight: 300;
+  }
+}
+
+.profile-header{
+  margin-bottom: 2em;
+  text-align: center;
+  @extend .cf;
+}
+
+.profile-header__inner{
+  display: inline-block;
+}
+
+.profile-title{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.profile-title__desc{
+  font-family: $second-font-family;
+  font-style: italic;
+  font-size: .9em;
+  line-height: 3em;
+  display: inline-block;
+  padding: 0em .5em;
+  border-bottom: 3px solid $base-ui-color;
+  color: lighten($base-ui-color, 30%);
+}
