@@ -3,9 +3,49 @@
 *------------------------------------*/
 
 .services{
-  padding-bottom: 130%;
+  padding-bottom: 90%;
   background:$base-ui-color url('images/johnie_content.png') bottom center no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
   position: relative;
+  color: #fff;
+}
+
+.services-container{
+  padding-top: 4em;
+  position: relative;
+}
+
+.services-grid{
+  padding: 3em;
+  padding-bottom: 4em;
+}
+
+.services-item{
+  text-align: center;
+}
+
+.services-title{
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+}
+
+.services-list{
+  display: block;
+  margin-bottom: 1.5em;
+  color: $brand-color;
+  font-style: italic;
+  font-family: $second-font-family;
+  font-size: 1em;
+}
+
+.approach{
+  p{
+    padding-top: 1em;
+    line-height: 1.68;
+    font-size: 1.2em;
+    font-weight: 300;
+  }
 }

@@ -68,39 +68,3 @@
     font-weight: 300;
   }
 }
-
-.section-header{
-  margin-bottom: 2em;
-  text-align: center;
-  @extend .cf;
-
-  &.section-header--negative{
-    color: #fff;
-
-    .section-title__desc{
-      border-bottom-color: #fff;
-    }
-  }
-}
-
-.section-header__inner{
-  display: inline-block;
-}
-
-.section-title{
-  text-transform: uppercase;
-  font-size: 1.8em;
-  margin: 0;
-  letter-spacing: 2px;
-}
-
-.section-title__desc{
-  font-family: $second-font-family;
-  font-style: italic;
-  font-size: .9em;
-  line-height: 3em;
-  display: inline-block;
-  padding: 0em .5em;
-  border-bottom: 3px solid $base-ui-color;
-  color: lighten($base-ui-color, 30%);
-}

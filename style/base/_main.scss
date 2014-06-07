@@ -53,3 +53,58 @@ a{
     }
   }
 }
+
+/**
+ * Section headers
+ */
+.section-header{
+  margin-bottom: 2em;
+  text-align: center;
+  @extend .cf;
+
+  &.section-header--negative{
+    color: #fff;
+  }
+}
+
+.section-header__inner{
+  display: inline-block;
+}
+
+.section-title{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.section-title__desc{
+  font-family: $second-font-family;
+  font-style: italic;
+  font-size: .9em;
+  line-height: 3em;
+  display: inline-block;
+  padding: 0em .5em;
+  color: lighten($base-ui-color, 30%);
+  position: relative;
+
+  .section-header--negative &{
+    color: $base-ui-color--light;
+  }
+
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -.6em;
+    left: 50%;
+    @include vendor(transform, translateX(-50%));
+    height: 3px;
+    width: 4em;
+    background-color: $base-ui-color;
+
+    .section-header--negative &{
+      background-color: #fff;
+    }
+  }
+}
