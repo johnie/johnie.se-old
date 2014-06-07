@@ -11,7 +11,7 @@
 .contact__inner{
   max-width: 860px;
   margin: 0 auto;
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 .contact-form{
@@ -101,7 +101,7 @@
   @include vendor(transition, background-color .3s ease);
 
   &:hover{
-    background: $brand-color url('images/arrow-right.svg') center center no-repeat;
+    background: $brand-color url('images/plane.svg') center center no-repeat;
     -webkit-background-size: 50%;
     background-size: 50%;
   }
