@@ -1,0 +1,232 @@
+/*------------------------------------*
+   $CONTACT
+*------------------------------------*/
+
+.contact{
+  padding: 3em;
+  padding-top: 5em;
+  background-color: $base-ui-color;
+}
+
+.contact__inner{
+  max-width: 860px;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+
+.contact-form{
+  position: relative;
+  margin: 0 auto;
+  max-width: 860px;
+  width: 100%;
+  text-align: left;
+  font-size: 2.5em;
+}
+
+.contact-form__submit{
+  display: none;
+}
+
+// Question list style
+.contact-questions{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  z-index: 5;
+
+  li{
+    z-index: 10;
+    position: relative;
+  }
+}
+
+// Labels
+.question-label{
+  display: block;
+  font-family: $second-font-family;
+  font-style: italic;
+  font-size: 1em;
+
+  label{
+    display: block;
+    position: relative;
+    z-index: 5;
+    color: $base-ui-color--light;
+  }
+}
+
+// Input field
+.contact-questions input{
+  display: block;
+  margin: 0;
+  padding: 0.5em 1em 0.3em 0.7em;
+  width: calc(100% - 2em);
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid $base-ui-color--light;
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.5;
+  @include vendor(transition, opacity 0.3s);
+  font-weight: 300;
+
+  .current &, .no-js &{
+    opacity: 1;
+  }
+}
+
+.contact-questions input:focus,
+.contact-form button:focus{
+  outline: none;
+}
+
+// Next button
+.contact-form__next{
+  position: absolute;
+  right: .2em;
+  top: 50%;
+  display: block;
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border: none;
+  background: $base-ui-color--light url('images/arrow-right--black.svg') center center no-repeat;
+  text-indent: -9999px;
+  @include vendor(border-radius, 3em);
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  cursor: pointer;
+  z-index: 6;
+  @include vendor(transition, background-color .3s ease);
+
+  &:hover{
+    background: $brand-color url('images/arrow-right.svg') center center no-repeat;
+    -webkit-background-size: 50%;
+    background-size: 50%;
+  }
+
+  &.show{
+    opacity: 1;
+    @include vendor(transform, translateX(0));
+    pointer-events: auto;
+  }
+}
+
+// Number indicators
+.contact-form__number{
+  display: block;
+  text-align: right;
+  position: absolute;
+  right: .15em;
+  margin: 0.4em 0;
+  width: 3em;
+  font-size: .6em;
+  font-family: $second-font-family;
+  font-style: italic;
+  color: #fff;
+  @extend .cf;
+
+  &:after{
+    position: absolute;
+    left: 50%;
+    content: '/';
+    @include vendor(transform, translateX(-50%));
+  }
+
+  span{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
+  .number-total{
+    color: $base-ui-color--light;
+  }
+}
+
+.contact-form.show-next .number-current {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.contact-form.show-next .number-next {
+  -webkit-animation: moveUpFromDown 0.4s both;
+  animation: moveUpFromDown 0.4s both;
+}
+
+// Error and final message
+.error-message,
+.final-message{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  @include vendor(transition, opacity 0.4s);
+
+  &.show{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.error-message{
+  padding: 0.4em 3.5em 0 0;
+  width: 100%;
+  color: rgba(0,0,0,0.7);
+  font-style: italic;
+  font-size: 0.4em;
+}
+
+.final-message{
+  top: 50%;
+  left: 0;
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+  @include vendor(transform, translateY(-50%));
+
+  &.show{
+    @include vendor(transition-delay, 0.5s);
+  }
+}
+
+// No JS fallback
+.no-js .contact-form{
+  font-size: 1.75em;
+}
+
+.no-js .contact-questions li{
+  padding: 0 0 2em;
+}
+
+.no-js .contact-form .submit{
+  display: block;
+  float: right;
+  padding: 10px 20px;
+  border: none;
+}
+
+.no-js .contact-form__controls{
+  display: none;
+}
+
+/* Remove IE clear cross */
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+/* Adjust form for smaller screens */
+@media screen and (max-width: 44.75em) {
+  .contact-form {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 33.5625em) {
+  .contact-form {
+    font-size: 1.2em;
+  }
+}

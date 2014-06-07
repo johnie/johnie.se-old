@@ -30,7 +30,7 @@ function activeBanner( el ) {
   });
 }
 
-function countUp () {
+function countUp() {
   var counter = 0,
       wrapper = $(".seconds-counter");
 
@@ -44,7 +44,7 @@ function countUp () {
   }, 1000);
 }
 
-function insta () {
+function insta() {
   var userId = 21141;
 
   $.ajax({
@@ -58,4 +58,8 @@ function insta () {
         }
       }
   });
+}
+
+function contactForm() {
+
 }

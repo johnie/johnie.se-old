@@ -11,12 +11,13 @@
   <meta name="description" content="{{ site.name }} - {{ site.title }}">
   <meta name="author" content="{{ site.name }}">
 
-  <link rel="stylesheet" href="{{ site.url }}/style.css">
+  <link rel="stylesheet" href="{{ site.url }}style.css">
 
   <script type="text/javascript" src="http://www.google.com/jsapi"></script>
   <script type="text/javascript">google.load("jquery", "1");</script>
   <script type="text/javascript" src="//use.typekit.net/lvx6ubl.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="{{ site.url }}js/modernizr.js"></script>
 
   <title>{% if page.title %}{{ site.name }} - {{ page.title }}{% else %}{{ site.name }} - {{ site.title }}{% endif %}</title>
   <meta charset="UTF-8">

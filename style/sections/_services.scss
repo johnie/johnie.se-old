@@ -12,13 +12,18 @@
 }
 
 .services-container{
-  padding-top: 4em;
+  padding-top: 5em;
   position: relative;
 }
 
 .services-grid{
   padding: 3em;
   padding-bottom: 4em;
+
+  p{
+    font-size: 1.1em;
+    font-weight: 300;
+  }
 }
 
 .services-item{
@@ -45,7 +50,8 @@
   p{
     padding-top: 1em;
     line-height: 1.68;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 300;
+    text-align: center;
   }
 }

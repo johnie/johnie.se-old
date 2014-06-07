@@ -4,26 +4,44 @@
 
 .footer{
   padding-top: 20%;
-  background: $base-ui-color--light url('images/footer.png') top center no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
+  background: $base-ui-color url('images/footer_bg.png') bottom center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
   @extend .cf;
+
+  &:after{
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($base-ui-color), to(rgba(0,0,0,0)));
+    background-image: -webkit-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
+    background-image: -o-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
+  }
 }
 
 .footer__inner{
   padding: 2em 2em .5em 2em;
 
   a{
-    color: $base-ui-color;
+    color: $brand-color;
     font-weight: 600;
 
     &:hover{
       color: $brand-color;
+      border-bottom: 1px solid $brand-color;
     }
   }
 
   p{
     margin: 0;
+    color: #fff;
   }
 }
 
@@ -34,7 +52,7 @@
   letter-spacing: 2px;
   line-height: 1;
   margin: 0;
-  color: $base-ui-color;
+  color: #fff;
 }
 
 .copyright-desc{
@@ -42,6 +60,7 @@
   font-size: 1em;
   display: block;
   margin-bottom: 1.5em;
+  color: #fff;
 }
 
 .copyright-text{
@@ -51,11 +70,13 @@
   font-weight: 600;
   font-size: .7em;
   line-height: 1.2;
+  color: #fff;
 }
 
 .address{
   padding-left: 2em;
   margin: 0;
+  color: #fff;
 
   strong{
     text-transform: uppercase;
@@ -78,6 +99,7 @@
   text-transform: uppercase;
   margin-bottom: 5px;
   letter-spacing: 1px;
+  color: #fff;
 }
 
 .social-item{
@@ -100,14 +122,14 @@ $social-icons: twitter #1BB2E9, facebook #3C599B, github #323031, linkedin #0064
   $color: nth($icons, 2);
 
   .social-item--#{$icon}{
-    background: $base-ui-color url("images/#{$icon}.svg") center center no-repeat;
+    background: $color url("images/#{$icon}.svg") center center no-repeat;
     -webkit-background-size: 50%;
     background-size: 50%;
     @include vendor(transition, background-color .2s ease);
 
     &:hover{
-      background-color: $color;
-      border-bottom: none;
+      background-color: darken($color, 15%);
+      border-bottom: none !important;
     }
   }
 }
