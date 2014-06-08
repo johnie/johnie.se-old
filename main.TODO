@@ -1,0 +1,35 @@
+Portfolio:
+
+RWD:
+  ☐ Use push states as much as possible
+  ☐ Use hamburgericon for nav
+  ☐ Place profilepic above content
+
+--- ✄ -----------------------
+
+Sections:
+
+  Portfolio:
+    ☐ Add grid
+    ✔ Download grid.js plugin @done (14-06-08 15:09)
+    ☐ Look through grid.js for changes
+
+  Contact:
+    ☐ Fix contact form javascript
+    ☐ Use form spree to send emails
+    ☐ Use textarea for last 'q'
+
+--- ✄ -----------------------
+
+Production:
+  ☐ Add meta content
+  ☐ Add ogp meta
+  ☐ Add svg support and gzip to .htaccess
+  ☐ Uglify javascript
+  ☐ Grunt-ftp to deploy
+
+--- ✄ -----------------------
+
+Test:
+  ☐ Check if site works without javascript
+  ☐ Check IE8 just in case

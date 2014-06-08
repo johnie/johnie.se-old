@@ -1,0 +1,22 @@
+<section id="projects">
+  <div class="projects">
+    <hgroup class="section-header">
+      <div class="section-header__inner">
+        <h3 class="section-title">My work</h3>
+        <small class="section-title__desc">a small selection of things that I’ve created so far</small>
+      </div>
+    </hgroup>
+
+    <div class="work-wrapper">
+      <div class="work-grid" id="work-grid">
+        {% for project in site.work %}
+          <li>
+            <a href data-largesrc="{{ project.image }}" data-title="{{ project.title }}" data-description="{{ project.content }}">
+              <img src="{{ project.thumb }}" alt="{{ project.title }}">
+            </a>
+          </li>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -15,4 +15,4 @@ I try to make the websites I design and build as simple and intuitive to use as 
 
 You have to take risks in order to move forward — I feel very passionate about that. I always say that if you feel uncomfortable, then you know you’re doing something right. Creating digital experiences that promote interaction. I think bigger, move faster, blow minds, get shit done and innovate — plus any other cliché saying that comes to mind.
 
-I'll be happy to meet new people so don't be hesitate if you want to talk about design, music, entrepreneurship, beer or if you just want to say hello, you can always send me an email at [johnie@hjelm.im](mailto:johnie@hjelm.im)
+I'll be happy to meet new people so don't be hesitate if you want to talk about design, music, entrepreneurship, beer or if you just want to say hello, you can always send me an email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>

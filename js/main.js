@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
   activeBanner(".banner");
   countUp();
   insta();
+  Grid.init();
 });
 
 $(window).resize(function(){

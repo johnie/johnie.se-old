@@ -1,0 +1,220 @@
+/*------------------------------------*
+   $WORK
+*------------------------------------*/
+
+$work-image__height: 250px;
+
+.projects{
+  padding: 5em 0;
+  @extend .cf;
+}
+
+.work-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.work-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: $work-image__height;
+}
+
+.work-grid li > a,
+.work-grid li > a img {
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+}
+
+.work-grid li.work-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: $base-ui-color;
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+.work-expander {
+  position: absolute;
+  background: $base-ui-color;
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+
+.work-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+.work-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.work-close::before,
+.work-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: $base-ui-color--light;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.work-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.work-close:hover::before,
+.work-close:hover::after {
+  background: #fff;
+}
+
+.work-fullimg,
+.work-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.work-details {
+  padding: 0 40px 0 20px;
+}
+
+.work-fullimg {
+  text-align: center;
+}
+
+.work-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.work-details h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2em;
+  padding: 40px 0 10px;
+  margin-bottom: .5em;
+  letter-spacing: 2px;
+}
+
+.work-details p {
+  color: $base-ui-color--light;
+  font-size: 1.1em;
+  line-height: 1.68;
+  font-weight: 300;
+}
+
+.work-details a {
+  font-weight: 300;
+  font-size: 16px;
+  color: $base-ui-color--light;
+  letter-spacing: 2px;
+  padding: 0 1.6em;
+  line-height: 3.0;
+  font-family: $second-font-family;
+  font-style: italic;
+  display: inline-block;
+  border: none;
+  margin: .5em 0 0;
+  outline: none;
+  border-radius: 3em;
+  background-color: transparent;
+  box-shadow: 0 0 0 3px $brand-color inset;
+  @include vendor(transition, all .4s cubic-bezier(0.07, 1, 0.25, 1) !important);
+
+  &:hover, &:focus{
+    box-shadow: 0 0 0 1.7em $brand-color inset;
+    color: #fff !important;
+  }
+}
+
+.work-details a::before {
+  content: '\2192';
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.work-details a:hover {
+  border-color: #999;
+  color: #999;
+}
+
+.work-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% { background: #ddd; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+  0% { background: #ddd; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+  0% { background: #ddd; }
+  33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+  66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 830px) {
+
+  .work-expander h3 { font-size: 32px; }
+  .work-expander p { font-size: 13px; }
+  .work-expander a { font-size: 12px; }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .work-fullimg { display: none; }
+  .work-details { float: none; width: 100%; }
+
+}
