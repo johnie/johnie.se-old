@@ -13,6 +13,13 @@
 
 
 /**
+ * Positions
+ */
+.position--relative { position: relative !important; }
+.position--absolute { position: relative !important; }
+.position--static   { position: relative !important; }
+
+/**
  * Add/remove floats
  */
 .float--right   { float:right!important; }

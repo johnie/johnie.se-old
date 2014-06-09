@@ -22,6 +22,11 @@
     @include vendor(transform, translateX(-50%));
     z-index: 5;
   }
+
+  .no-js &{
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .insta{
@@ -57,6 +62,10 @@
     left: 0;
     line-height: 1;
   }
+
+  @include media-query(palm) {
+    width: 50%;
+  }
 }
 
 .insta-content{
@@ -77,6 +86,12 @@
   font-weight: bold;
   margin: 0;
   letter-spacing: 2px;
+
+  @include media-query(palm) {
+    font-size: 2em;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
 }
 
 .insta-desc{
@@ -84,4 +99,8 @@
   font-style: italic;
   letter-spacing: 1px;
   margin: 0;
+
+  @include media-query(palm) {
+    font-size: 14px;
+  }
 }

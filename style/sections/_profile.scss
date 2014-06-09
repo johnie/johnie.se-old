@@ -11,6 +11,10 @@
   height: 250px;
   position: relative;
   @extend .cf;
+
+  @include media-query(palm) {
+    height: auto;
+  }
 }
 
 .profile-excerpt__inner{
@@ -32,6 +36,20 @@
       font-weight: 500;
     }
   }
+
+  @include media-query(palm) {
+    padding: 30px 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    @include vendor(transform, translate(0, 0));
+    display: block;
+
+    p{
+      font-size: 18px;
+      line-height: 1.68;
+    }
+  }
 }
 
 
@@ -43,6 +61,20 @@
   min-height: 500px;
   position: relative;
   @extend .cf;
+
+  @include media-query(palm) {
+    .palm-one-whole{
+      display: block;
+      position: relative;
+    }
+  }
+
+  @include media-query(lap) {
+    .lap-one-whole{
+      display: block;
+      position: relative;
+    }
+  }
 }
 
 .profile__image{
@@ -53,10 +85,23 @@
   top: 0;
   left: 0;
   height: 100%;
-}
+  width: 100%;
 
-.profile__content{
-  float: right;
+  @include media-query(palm) {
+    background: $base-ui-color url('images/johnie_left.png') center -100px no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    position: relative !important;
+    height: 300px;
+  }
+
+  @include media-query(lap) {
+    background: $base-ui-color url('images/johnie_left.png') center -250px no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    position: relative !important;
+    padding-bottom: 50%;
+  }
 }
 
 .profile__content-inner{
@@ -69,5 +114,13 @@
     font-size: 1.2em;
     line-height: 1.68;
     font-weight: 300;
+  }
+
+  @include media-query(palm) {
+    padding: 30px 15px;
+
+    p{
+      font-size: 16px;
+    }
   }
 }

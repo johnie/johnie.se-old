@@ -87,10 +87,25 @@ module.exports = function(grunt) {
           logConcurrentOutput: true
         }
       }
+    },
+
+    'ftp-deploy': {
+      build: {
+        auth: {
+          host: 'ftp.johnie.se',
+          port: 21,
+          authKey: 'key1'
+        },
+        src: '_site/',
+        dest: 'dev.johnie.se/public_html/portfolio/',
+        exclusions: ['_site/**/.DS_Store', '_site/**/main.TODO',]
+      }
     }
   });
 
   grunt.registerTask('scripts', ['uglify']);
+
+  grunt.registerTask('deploy', ['ftp-deploy']);
 
   grunt.registerTask('default', ['shell', 'connect', 'concurrent'])
 };

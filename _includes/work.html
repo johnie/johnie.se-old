@@ -1,4 +1,4 @@
-<section id="projects">
+<section id="work">
   <div class="projects">
     <hgroup class="section-header">
       <div class="section-header__inner">
@@ -11,7 +11,7 @@
       <div class="work-grid" id="work-grid">
         {% for project in site.work %}
           <li>
-            <a href data-largesrc="{{ project.image }}" data-title="{{ project.title }}" data-description="{{ project.content }}">
+            <a href="{{ project.link }}" data-largesrc="{{ project.image }}" data-title="{{ project.title }}" data-description="{{ project.content }}">
               <img src="{{ project.thumb }}" alt="{{ project.title }}">
             </a>
           </li>

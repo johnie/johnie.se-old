@@ -1,9 +1,11 @@
 jQuery(document).ready(function($) {
+  toggleMenu(".responsive-nav", "responsive-nav--open");
   fullHeight(".header");
   activeBanner(".banner");
   countUp();
   insta();
   Grid.init();
+  contactForm();
 });
 
 $(window).resize(function(){
@@ -28,6 +30,14 @@ function activeBanner( el ) {
     else{
       element.removeClass("active");
     }
+  });
+}
+
+function toggleMenu ( el, klass ) {
+  var element = $(el);
+
+  $(element).on("click", function() {
+    $(this).toggleClass(klass);
   });
 }
 
@@ -62,5 +72,35 @@ function insta() {
 }
 
 function contactForm() {
+  var $form = $('#theForm');
 
+  var steps = $('.pm-step').length;
+
+  // Initialize Promin
+  $form.promin({
+      // Set method to AJAX
+      // Still uses the form's action URL
+      actions: {
+          submit: 'ajax'
+      },
+
+      autofocus: false,
+
+      // Want to update the bar on every change
+      events: {
+          change: function(i) {
+            $('.number-current').text(i+1);
+          }
+      },
+
+      // Run this when AJAX is sent
+      ajaxCallback: function(data) {
+          alert('Data was sent (nowhere) via AJAX!');
+      }
+  });
+
+  $('.contact-form__next').on('click', function(e) {
+    e.preventDefault();
+    $form.promin('next');
+  });
 }

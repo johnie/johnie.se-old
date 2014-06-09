@@ -52,6 +52,16 @@ a{
       color: $brand-color;
     }
   }
+
+  @include media-query(palm) {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  @include media-query(lap) {
+    text-align: center;
+    font-size: 1em;
+  }
 }
 
 /**

@@ -24,6 +24,18 @@
     background-image: -ms-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
     background-image: -o-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
   }
+
+  @include media-query(palm) {
+    padding-top: 30%;
+
+    &:after{
+      height: 150px;
+    }
+
+    .palm-one-whole{
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .footer__inner{
@@ -42,6 +54,17 @@
   p{
     margin: 0;
     color: #fff;
+  }
+
+  @include media-query(palm) {
+    padding: 2em 10px 0;
+  }
+}
+
+.copyright{
+  @include media-query(palm) {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -92,6 +115,10 @@
     margin-bottom: 5px;
     font-style: normal;
     letter-spacing: 1px;
+  }
+
+  @include media-query(palm) {
+    padding-left: 0;
   }
 }
 

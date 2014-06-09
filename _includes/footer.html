@@ -3,46 +3,11 @@
 <script src="{{ site.url }}js/grid.js"></script>
 <script src="{{ site.url }}js/nav.js"></script>
 <script src="{{ site.url }}js/main.js"></script>
-<script>
-  var $form = $('#theForm');
-
-  // Stuff for the progress bar
-  var $bar = $('.progress-bar .bar');
-  var steps = $('.pm-step').length;
-
-  // Initialize Promin
-  $form.promin({
-      // Set method to AJAX
-      // Still uses the form's action URL
-      actions: {
-          submit: 'ajax'
-      },
-
-      autofocus: false,
-
-      // Want to update the bar on every change
-      events: {
-          change: function(i) {
-            $('.number-current').text(i+1);
-          }
-      },
-
-      // Run this when AJAX is sent
-      ajaxCallback: function(data) {
-          alert('Data was sent (nowhere) via AJAX!');
-      }
-  });
-
-  // Tell the button to go to the next step
-  $('.contact-form__next').on('click', function() {
-      $form.promin('next');
-  });
-</script>
 
 <footer class="footer" role="contentinfo">
   <div class="footer__inner">
     <div class="grid">
-      <div class="grid__item one-quarter">
+      <div class="grid__item one-quarter  palm-one-whole">
         <div class="copyright">
           <h4 class="copyright-title">{{ site.name }}</h4>
           <small class="copyright-desc">{{ site.title }}</small>
@@ -50,7 +15,7 @@
           <p class="copyright-text">© <span class="year">2014</span> {{ site.wired }},<br>unless otherwise noted.</p>
         </div>
       </div>
-      <div class="grid__item one-quarter">
+      <div class="grid__item one-quarter  palm-one-whole">
         <address class="address">
           <p><strong>{{ site.wired }}</strong></p>
           <p>Söderbyvägen 4, 195 60,</p>
@@ -59,12 +24,12 @@
           <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </address>
       </div>
-      <div class="grid__item three-tenths">
+      <div class="grid__item three-tenths  palm-one-whole">
         <h4 class="footer-title">Colophon</h4>
 
         <p>Designed, developed, and maintained by <a href="/">Johnie Hjelm</a>. Hosted by <a href="http://binero.se">Binero</a>. Set in Brandon Grotesque and Old Standard. Photos by <a href="http://henrikbjorkman.com/">Henrik Björkman</a>. View the <a href="http://github.com/johnie/johnie.se">source</a>.</p>
       </div>
-      <div class="grid__item two-tenths footer-social">
+      <div class="grid__item two-tenths footer-social  palm-one-whole">
         <h4 class="footer-title">Let's connect</h4>
 
         <ul class="nav social">

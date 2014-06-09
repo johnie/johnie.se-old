@@ -25,6 +25,25 @@
 
 .contact-form__submit{
   display: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  @include vendor(border-radius, 3em);
+  @include vendor(box-shadow, 0 0 0 2px $brand-color inset);
+  font-size: .8em;
+  padding: 0em 1.5em;
+  line-height: 2.5;
+  height: 2.5em;
+  @include vendor(transition, all .4s cubic-bezier(0.07, 1, 0.25, 1) !important);
+
+  &:hover, &:focus{
+    box-shadow: 0 0 0 1.5em $brand-color inset;
+    color: #fff !important;
+  }
+
+  .no-js &{
+    display: block;
+  }
 }
 
 // Question list style
@@ -57,7 +76,7 @@
 }
 
 // Input field
-.contact-questions input{
+.contact-questions input, .contact-questions textarea{
   display: block;
   margin: 0;
   padding: 0.5em 1em 0.3em 0.7em;
@@ -74,6 +93,15 @@
   .current &, .no-js &{
     opacity: 1;
   }
+}
+
+.contact-questions textarea{
+  padding: 1em 1em 0.3em 0.7em;
+  font-size: 18px;
+  line-height: 1.68;
+  resize: none;
+  width: calc(100% - 5em);
+  min-height: 150px;
 }
 
 .contact-questions input:focus,
@@ -101,7 +129,7 @@
   @include vendor(transition, background-color .3s ease);
 
   &:hover{
-    background: $brand-color url('images/plane.svg') center center no-repeat;
+    background: $brand-color url('images/arrow-right.svg') center center no-repeat;
     -webkit-background-size: 50%;
     background-size: 50%;
   }

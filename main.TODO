@@ -10,26 +10,28 @@ RWD:
 Sections:
 
   Portfolio:
-    ☐ Add grid
+    ✔ Add grid @done (14-06-08 19:47)
     ✔ Download grid.js plugin @done (14-06-08 15:09)
-    ☐ Look through grid.js for changes
+    ✔ Look through grid.js for changes @done (14-06-08 19:47)
 
   Contact:
     ☐ Fix contact form javascript
-    ☐ Use form spree to send emails
-    ☐ Use textarea for last 'q'
+    ✔ Use form spree to send emails @done (14-06-08 19:48)
+    ✔ Use textarea for last 'q' @done (14-06-08 19:48)
+    ✔ Add brace form names to properly send message @done (14-06-08 19:52)
 
 --- ✄ -----------------------
 
 Production:
+  ✔ Favicon @done (14-06-08 21:32)
   ☐ Add meta content
   ☐ Add ogp meta
   ☐ Add svg support and gzip to .htaccess
   ☐ Uglify javascript
-  ☐ Grunt-ftp to deploy
+  ✔ Grunt-ftp to deploy @done (14-06-08 21:32)
 
 --- ✄ -----------------------
 
 Test:
-  ☐ Check if site works without javascript
+  ✔ Check if site works without javascript @done (14-06-08 21:48)
   ☐ Check IE8 just in case

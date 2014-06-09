@@ -9,7 +9,7 @@ The story begins about <span class="seconds-counter">1</span> ago. You clicked a
 
 I am someone who aspires to positively change the world someday, I drink coffee like it’s religious holy water, and may have an unhealthy obsession with my work. But creating is not just a job for me, it’s a passion. My mission in life is to create awesome things and enjoy each moment of it.
 
-I see myself as a hybrid designer-developer and a humble know-it-all, who likes to read about Entrepreneurship to my morning coffee, advanced JavaScript Design Patterns at day, and about WWII Heros at night.
+I see myself as a hybrid designer-developer and a humble know-it-all, who likes to read about Entrepreneurship to my morning coffee, advanced SASS Design Patterns at day, and about WWII Heros at night.
 
 I try to make the websites I design and build as simple and intuitive to use as possible whilst still having a unique aesthetic appeal. I specialise in responsive front-end design, HTML/CSS and JavaScript. I also believe in cutting edge web technologies, and care for semantics and accessibility. Which means I usually build the things I design, though I don't build things designed by others.
 

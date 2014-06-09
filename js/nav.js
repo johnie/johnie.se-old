@@ -1,7 +1,7 @@
 var lastId,
     topMenu       = $(".nav"),
     topMenuHeight = topMenu.outerHeight()+0,
-    menuItems     = topMenu.find("a"),
+    menuItems     = topMenu.find(".menu-item"),
     activeClass   = "active",
     scrollItems   = menuItems.map(function(){
       var item    = $($(this).attr("href"));
@@ -16,7 +16,7 @@ menuItems.click(function(e){
         offsetTop = href === "#" ? 0 : $(href).offset().top - 61;
     $('html, body').stop().animate({
         scrollTop: offsetTop
-    }, 250);
+    }, 300);
 });
 
 function highlightNav() {

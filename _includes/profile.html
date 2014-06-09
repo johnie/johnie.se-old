@@ -6,9 +6,11 @@
   </div>
 
   <article class="article profile" id="story">
-    <div class="grid">
-      <div class="grid__item one-third profile__image"></div>
-      <div class="grid__item two-thirds profile__content">
+    <div class="flexbox">
+      <div class="flexbox__item one-third position--relative  palm-one-whole lap-one-whole" >
+        <div class="profile__image"></div>
+      </div>
+      <div class="flexbox__item two-thirds profile__content  palm-one-whole lap-one-whole">
         <div class="profile__content-inner">
           {% markdown main.md %}
         </div>
