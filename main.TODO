@@ -1,9 +1,9 @@
 Portfolio:
 
 RWD:
-  ☐ Use push states as much as possible
-  ☐ Use hamburgericon for nav
-  ☐ Place profilepic above content
+  ✔ Use push states as much as possible @done (14-06-09 13:40)
+  ✔ Use hamburgericon for nav @done (14-06-09 13:40)
+  ✔ Place profilepic above content @done (14-06-09 13:40)
 
 --- ✄ -----------------------
 
@@ -34,4 +34,4 @@ Production:
 
 Test:
   ✔ Check if site works without javascript @done (14-06-08 21:48)
-  ☐ Check IE8 just in case
+  ✔ Check IE8 just in case @done (14-06-09 13:59)

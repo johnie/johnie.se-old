@@ -6,12 +6,20 @@
   padding: 3em;
   padding-top: 5em;
   background-color: $base-ui-color;
+
+  @include media-query(palm) {
+    padding: 4em 1em 2em;
+  }
 }
 
 .contact__inner{
   max-width: 860px;
   margin: 0 auto;
   padding-top: 3em;
+
+  @include media-query(palm) {
+    padding-top: 1.5em;
+  }
 }
 
 .contact-form{
@@ -21,6 +29,10 @@
   width: 100%;
   text-align: left;
   font-size: 2.5em;
+
+  @include media-query(palm) {
+    font-size: 1.5em;
+  }
 }
 
 .contact-form__submit{
@@ -73,6 +85,10 @@
     z-index: 5;
     color: $base-ui-color--light;
   }
+
+  @include media-query(palm) {
+    font-size: 18px;
+  }
 }
 
 // Input field
@@ -102,6 +118,11 @@
   resize: none;
   width: calc(100% - 5em);
   min-height: 150px;
+
+  @include media-query(palm) {
+    font-size: 16px;
+    width: calc(100% - 4em);
+  }
 }
 
 .contact-questions input:focus,
@@ -211,14 +232,14 @@
 .final-message{
   top: 50%;
   left: 0;
-  padding: 0.5em;
+  padding: 1em;
   width: 100%;
   text-align: center;
+  font-size: .8em;
+  background-color: $brand-color;
+  color: #fff;
   @include vendor(transform, translateY(-50%));
-
-  &.show{
-    @include vendor(transition-delay, 0.5s);
-  }
+  @include vendor(border-radius, 4px);
 }
 
 // No JS fallback
@@ -246,15 +267,14 @@ input[type=text]::-ms-clear {
     display: none;
 }
 
-/* Adjust form for smaller screens */
-@media screen and (max-width: 44.75em) {
-  .contact-form {
-    font-size: 1.8em;
+.message-send{
+  .contact-form__inner{
+    opacity: .2;
   }
-}
 
-@media screen and (max-width: 33.5625em) {
-  .contact-form {
-    font-size: 1.2em;
+  .final-message{
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
   }
 }

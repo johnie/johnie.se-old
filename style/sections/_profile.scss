@@ -85,7 +85,6 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
 
   @include media-query(palm) {
     background: $base-ui-color url('images/johnie_left.png') center -100px no-repeat;
@@ -102,6 +101,10 @@
     position: relative !important;
     padding-bottom: 50%;
   }
+}
+
+.profile__content{
+  float: right;
 }
 
 .profile__content-inner{

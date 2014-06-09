@@ -239,7 +239,7 @@
     }
   }
 
-  @include media-query(lap) {
+@include media-query(lap) {
     display: none;
 
     > li{
@@ -257,10 +257,6 @@
             display:inline-block;
         }
     }
-  }
-
-  @include media-query(lap) {
-    display: none;
   }
 }
 

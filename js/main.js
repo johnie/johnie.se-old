@@ -78,25 +78,26 @@ function contactForm() {
 
   // Initialize Promin
   $form.promin({
-      // Set method to AJAX
-      // Still uses the form's action URL
-      actions: {
-          submit: 'ajax'
-      },
+    // Set method to AJAX
+    // Still uses the form's action URL
+    actions: {
+        submit: 'ajax'
+    },
 
-      autofocus: false,
+    autofocus: false,
 
-      // Want to update the bar on every change
-      events: {
-          change: function(i) {
-            $('.number-current').text(i+1);
-          }
-      },
-
-      // Run this when AJAX is sent
-      ajaxCallback: function(data) {
-          alert('Data was sent (nowhere) via AJAX!');
+    // Want to update the bar on every change
+    events: {
+      change: function(i) {
+        $('.number-current').text(i+1);
       }
+    },
+
+    // Run this when AJAX is sent
+    ajaxCallback: function(data) {
+      $(".contact-form").addClass('message-send');
+      $(".final-message").text('Thanks! We\'ll stay in touch!')
+    }
   });
 
   $('.contact-form__next').on('click', function(e) {
