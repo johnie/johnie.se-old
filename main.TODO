@@ -1,7 +1,7 @@
 Portfolio:
 
 RWD:
-  ✔ Use push states as much as possible @done (14-06-09 13:40)
+  ✔ Use push classes as much as possible @done (14-06-09 13:40)
   ✔ Use hamburgericon for nav @done (14-06-09 13:40)
   ✔ Place profilepic above content @done (14-06-09 13:40)
 
@@ -16,8 +16,9 @@ Sections:
     ☐ Fill in the content
 
   Contact:
-    ☐ Fix contact form javascript
-    ☐ Fix webkit appearance on form
+    ✔ Fix contact form javascript @done (14-06-10 21:38)
+    ☐ Add form validation
+    ✔ Fix webkit appearance on form @done (14-06-10 21:38)
     ✔ Use form spree to send emails @done (14-06-08 19:48)
     ✔ Use textarea for last 'q' @done (14-06-08 19:48)
     ✔ Add brace form names to properly send message @done (14-06-08 19:52)

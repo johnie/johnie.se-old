@@ -90,8 +90,31 @@ function contactForm() {
 
     // Want to update the bar on every change
     events: {
-      change: function(i) {
+      change: function( i ) {
         $('.number-current').text(i+1);
+      },
+      submit: function( fields ) {
+        var empty = false;
+
+        fields.each(function ( i, e ) {
+          var $e     = $( e ),
+              val    = $e.val(),
+              length = val.length;
+
+          empty = ( length === 0 );
+
+          // Now to the important stuff. Ensure no one submits an empty form
+          if ( empty ) {
+            // Show first invalid field and highlight
+            $form.promin('show', i);
+            $e.addClass('error');
+
+            return false;
+          }
+        });
+
+        // If there are no empty fields, do submit
+        return (!empty);
       }
     },
 

@@ -91,6 +91,23 @@
   }
 }
 
+@include keyframe(shake) {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
 // Input field
 .contact-questions input, .contact-questions textarea{
   display: block;
@@ -105,9 +122,17 @@
   line-height: 1.5;
   @include vendor(transition, opacity 0.3s);
   font-weight: 300;
+  @include vendor(border-radius, 0);
+  -webkit-appearance: none;
 
   .current &, .no-js &{
     opacity: 1;
+  }
+
+  &.error{
+    background-color: rgba(212, 35, 62, .3);
+    border-bottom-color: #D4233E;
+    @include vendor(animation, shake .8s ease);
   }
 }
 

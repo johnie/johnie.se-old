@@ -35,7 +35,7 @@
 
 .header{
   position: relative;
-  min-height: 400px;
+  min-height: 500px;
   background:$base-ui-color url('images/bg.png') top center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -53,6 +53,10 @@
     background-image: -moz-linear-gradient(top, rgba(0,0,0,0), $base-ui-color);
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0), $base-ui-color);
     background-image: -o-linear-gradient(top, rgba(0,0,0,0), $base-ui-color);
+
+    @include media-query(palm) {
+      height: 150px;
+    }
   }
 }
 
