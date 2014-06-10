@@ -2,7 +2,7 @@
 
 ##Hello there!
 
-Welcome to the heart of my website. Fairly recently, my site and I went through a somewhat philosophical change, opting for speed over much else on the backend, and for inspirational design over personal taste. (Of course, the editorial design only goes as far as my personal taste – and writing style – allow.)
+Welcome to the heart of my website. Fairly recently, my site and I went through a somewhat philosophical change, opting for speed over much else on the backend, and for inspirational design over personal taste.
 
 ### For whom is this repo for?
 
