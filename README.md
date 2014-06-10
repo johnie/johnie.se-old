@@ -26,5 +26,5 @@ The source code here on Github is all good and well, but there’s still a vital
 
 <dl>
   <dt>Why aren't you using Github pages to host your Jekyll site, like everbody else?</dt>
-  <dd>While GitHub lets you host Jekyll-powered sites directly on GitHub itself, they don’t allow many custom Jekyll plugins. I also have some issues with the Open Graph Protocol not parsing my sites data. So if you have an solution to this; please [submit an issue](https://github.com/johnie/johnie.se/issues) regarding it with the solution.</dd>
+  <dd>While GitHub lets you host Jekyll-powered sites directly on GitHub itself, they don’t allow many custom Jekyll plugins. I also have some issues with the Open Graph Protocol not parsing my sites data. So if you have an solution to this; please <a href="https://github.com/johnie/johnie.se/issues">submit an issue</a> regarding it with the solution.</dd>
 </dl>
