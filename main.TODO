@@ -13,6 +13,7 @@ Sections:
     ✔ Add grid @done (14-06-08 19:47)
     ✔ Download grid.js plugin @done (14-06-08 15:09)
     ✔ Look through grid.js for changes @done (14-06-08 19:47)
+    ☐ Fill in the content
 
   Contact:
     ☐ Fix contact form javascript
@@ -25,8 +26,8 @@ Sections:
 
 Production:
   ✔ Favicon @done (14-06-08 21:32)
-  ☐ Add meta content
-  ☐ Add ogp meta
+  ✔ Add meta content @done (14-06-10 21:31)
+  ✔ Add ogp meta @done (14-06-10 21:32)
   ☐ Add svg support and gzip to .htaccess
   ✔ Uglify javascript @done (14-06-10 13:49)
   ✔ Grunt-ftp to deploy @done (14-06-08 21:32)
