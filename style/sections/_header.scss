@@ -5,9 +5,37 @@
  * Main .header modifiers
  */
 
+@include keyframe(jumper) {
+  0%{
+    bottom: 1em;
+  }
+  50% {
+    bottom: 1.5em;
+  }
+  100%{
+    bottom: 1em;
+  }
+}
+
+.jumper{
+  display: block;
+  width: 2em;
+  height: 2em;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 2em;
+  position: absolute;
+  z-index: 15;
+  bottom: 1em;
+  left: 50%;
+  text-align: center;
+  @include vendor(transform, translateX(-50%));
+  @include vendor(animation, jumper 1.5s ease-in-out infinite);
+}
+
 .header{
   position: relative;
-  min-height: 600px;
+  min-height: 400px;
   background:$base-ui-color url('images/bg.png') top center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;

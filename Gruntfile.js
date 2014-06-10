@@ -70,7 +70,10 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %> */',
         sourceMap: true,
-        sourceMapName: 'js/sourcemap/main.map'
+        sourceMapName: 'js/sourcemap/main.map',
+        mangle: {
+          except: ['Modernizr']
+        }
       },
       my_target: {
         files: {
@@ -100,12 +103,43 @@ module.exports = function(grunt) {
         dest: 'dev.johnie.se/public_html/portfolio/',
         exclusions: ['_site/**/.DS_Store', '_site/**/main.TODO',]
       }
+    },
+
+    modernizr: {
+      dist: {
+        "devFile" : "js/modernizr.js",
+        "outputFile" : "js/modernizr.min.js",
+        "extra" : {
+          "shiv" : true,
+          "printshiv" : true,
+          "load" : true,
+          "mq" : true,
+          "cssclasses" : true
+        },
+        "extensibility" : {
+          "addtest" : true,
+          "prefixed" : true,
+          "teststyles" : true,
+          "testprops" : true,
+          "testallprops" : true,
+          "hasevents" : true,
+          "prefixes" : true,
+          "domprefixes" : true
+        },
+        "uglify" : true,
+        "tests" : [],
+        "parseFiles" : true,
+        "matchCommunityTests" : false,
+        "customTests" : []
+      }
     }
   });
 
   grunt.registerTask('scripts', ['uglify']);
 
   grunt.registerTask('deploy', ['ftp-deploy']);
+
+  grunt.registerTask('modern', ['modernizr']);
 
   grunt.registerTask('default', ['shell', 'connect', 'concurrent'])
 };

@@ -16,6 +16,7 @@ Sections:
 
   Contact:
     ☐ Fix contact form javascript
+    ☐ Fix webkit appearance on form
     ✔ Use form spree to send emails @done (14-06-08 19:48)
     ✔ Use textarea for last 'q' @done (14-06-08 19:48)
     ✔ Add brace form names to properly send message @done (14-06-08 19:52)
@@ -27,7 +28,7 @@ Production:
   ☐ Add meta content
   ☐ Add ogp meta
   ☐ Add svg support and gzip to .htaccess
-  ☐ Uglify javascript
+  ✔ Uglify javascript @done (14-06-10 13:49)
   ✔ Grunt-ftp to deploy @done (14-06-08 21:32)
 
 --- ✄ -----------------------

@@ -1,6 +1,8 @@
 jQuery(document).ready(function($) {
   toggleMenu(".responsive-nav", "responsive-nav--open");
-  fullHeight(".header");
+  if( !Modernizr.touch ) {
+    fullHeight(".header");
+  }
   activeBanner(".banner");
   countUp();
   insta();
@@ -9,34 +11,34 @@ jQuery(document).ready(function($) {
 });
 
 $(window).resize(function(){
-  fullHeight(".header");
+  if( !Modernizr.touch ) {
+    fullHeight(".header");
+  }
 });
 
-function fullHeight(el) {
-  var element = $(el);
-
-  element.css({
-    "height" : $(window).height() + "px"
+function fullHeight( el ) {
+  $(el).css({
+    "height" : $(window).height() + "px",
+    "max-height" : "700px"
   });
 }
 
 function activeBanner( el ) {
-  var element = $(el);
-
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100){
-      element.addClass("active");
+      $(el).addClass("active");
+      $(".jumper").fadeOut("normal", function() {
+        $(this).remove();
+      });
     }
     else{
-      element.removeClass("active");
+      $(el).removeClass("active");
     }
   });
 }
 
 function toggleMenu ( el, klass ) {
-  var element = $(el);
-
-  $(element).on("click", function() {
+  $(el).on("click", function() {
     $(this).toggleClass(klass);
   });
 }

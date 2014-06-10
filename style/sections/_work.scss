@@ -207,7 +207,7 @@ $work-image__height: 250px;
 @media screen and (max-width: 830px) {
 
   .work-expander h3 { font-size: 32px; }
-  .work-expander p { font-size: 13px; }
+  .work-expander p { font-size: 16px; }
   .work-expander a { font-size: 12px; }
 
 }
@@ -215,6 +215,7 @@ $work-image__height: 250px;
 @media screen and (max-width: 650px) {
 
   .work-fullimg { display: none; }
-  .work-details { float: none; width: 100%; }
-
+  .work-expander h3 { font-size: 28px; }
+  .work-details { float: none; width: 100%; padding: 10px; }
+  .work-expander-inner { padding: 40px 10px; height: 100%; }
 }
