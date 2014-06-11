@@ -101,7 +101,6 @@ $work-image__height: 250px;
   width: 50%;
   float: left;
   height: 100%;
-  overflow: hidden;
   position: relative;
 }
 
@@ -131,7 +130,7 @@ $work-image__height: 250px;
 
 .work-details p {
   color: $base-ui-color--light;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.68;
   font-weight: 300;
 }
@@ -169,10 +168,14 @@ $work-image__height: 250px;
   66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
 }
 
+@media screen and (min-width: 830px) {
+  .work-expander p { font-size: 18px; }
+}
 @media screen and (max-width: 830px) {
 
   .work-expander h3 { font-size: 32px; }
   .work-expander p { font-size: 16px; }
+  .work-details { overflow: auto; }
 
 }
 

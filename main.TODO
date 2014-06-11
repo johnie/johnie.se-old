@@ -13,11 +13,11 @@ Sections:
     ✔ Add grid @done (14-06-08 19:47)
     ✔ Download grid.js plugin @done (14-06-08 15:09)
     ✔ Look through grid.js for changes @done (14-06-08 19:47)
-    ☐ Fill in the content
+    ✔ Fill in the content @done (14-06-11 18:28)
 
   Contact:
     ✔ Fix contact form javascript @done (14-06-10 21:38)
-    ☐ Add form validation
+    ✔ Add form validation @done (14-06-11 18:28)
     ✔ Fix webkit appearance on form @done (14-06-10 21:38)
     ✔ Use form spree to send emails @done (14-06-08 19:48)
     ✔ Use textarea for last 'q' @done (14-06-08 19:48)
@@ -38,3 +38,10 @@ Production:
 Test:
   ✔ Check if site works without javascript @done (14-06-08 21:48)
   ✔ Check IE8 just in case @done (14-06-09 13:59)
+
+--- ✄ -----------------------
+
+After Release:
+  ☐ Fix issues with portfolio item height on ipad
+  ☐ Better validation on form
+  ☐ Use adaptive images with srcset

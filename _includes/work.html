@@ -11,7 +11,7 @@
       <div class="work-grid" id="work-grid">
         {% for project in site.work | sort_by:title %}
           <li>
-            <a {% if project.link == blank %} href {% else %} href="{{ project.link }}" {% endif %} data-largesrc="{{ site.url }}uploads/{{ project.title | downcase | replace: " ", "-" }}.png" data-title="{{ project.title }}" data-description="{{ project.content }}">
+            <a {% if project.link == blank %} href {% else %} href="{{ project.link }}" {% endif %} data-largesrc="{{ site.url }}uploads/{{ project.title | downcase | replace: " ", "-" }}.png" data-title="{{ project.title }}" data-description='{{ project.content }}'>
               <img src="uploads/{{ project.title | downcase | replace: " ", "-" }}_small.png" alt="{{ project.title }}">
             </a>
           </li>

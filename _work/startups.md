@@ -3,4 +3,5 @@ title: Startups Symbio
 link: http://startups.symbio.com
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sequi cum voluptate dolores odio unde ipsum? Enim, odio amet quaerat unde voluptatum at officiis deleniti corporis reiciendis distinctio vero ex!
+Symbio love startups and innovation and with this site we want to provide your business with the human resources you need to develop your services and grow your company. We are happy to be the interim solution while you get your team in place, or we can strengthen your team with specific competence that you may need from one time to another.<br><br><a href="http://startups.symbio.com" class="btn btn--natural btn--positive btn--soft btn--old btn--contact">Visit website</a>
+

@@ -100,8 +100,8 @@ module.exports = function(grunt) {
           authKey: 'key1'
         },
         src: '_site/',
-        dest: 'dev.johnie.se/public_html/portfolio/',
-        exclusions: ['_site/**/.DS_Store', '_site/**/main.TODO',]
+        dest: 'johnie.se/public_html/',
+        exclusions: ['_site/**/.DS_Store', '_site/**/main.TODO']
       }
     },
 
