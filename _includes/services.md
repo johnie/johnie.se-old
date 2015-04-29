@@ -14,21 +14,21 @@
 
         <small class="services-list">Logo Design / Corporate Identity / Brand Strategy / Collateral / Brand Architecture / Brand Guidelines</small>
 
-        <p>I believe the key to a strong, memorable brand, is simplicity. Your brand identity is not just a logo, it’s the visual language holding your brand together. I help my clients reach their audience through honesty & emotional connections.</p>
+        <p>I believe the key to a strong, memorable brand, is simplicity. Your brand identity is not just a logo, its the visual language holding your brand together. I help my clients reach their audience through honesty &amp; emotional connections.</p>
       </div>
       <div class="grid__item one-third services-item  palm-one-whole">
         <h2 class="services-title">Digital Experiences &amp; Development</h2>
 
-        <small class="services-list">Responsive Website Design & Development / Mobile Design / User Experience / E-Commerce</small>
+        <small class="services-list">Responsive Website Design &amp; Development / Mobile Design / User Experience / E-Commerce</small>
 
-        <p>I craft simple websites that work. With the perfect balance of design & usability, I create digital platforms with the user at the heart of the strategy. Responsive design comes as standard, allowing my websites to work across multiple devices seamlessly.</p>
+        <p>I craft simple websites that work. With the perfect balance of design &amp; usability, I create digital platforms with the user at the heart of the strategy. Responsive design comes as a standard, allowing my websites work seamlessly across multiple devices.</p>
       </div>
       <div class="grid__item one-third services-item  palm-one-whole">
         <h2 class="services-title">Print Design &amp; Management</h2>
 
         <small class="services-list">Brand Stationery / Brochure Design / Editorial / Large Format / Exhibition Graphics / Layout Design</small>
 
-        <p>The quality of your brand needs to be maintained across printed materials. Physical interaction is an opportunity to reflect the quality & trust of your company when engaging with your customers. I achieve this through specialist papers & high quality printing methods.</p>
+        <p>The quality of your brand needs to be maintained across printed materials. Physical interaction is an opportunity to reflect on the quality and trustworthiness of your company when engaging with your customers. I achieve this through high quality printing methods.</p>
       </div>
 
     </div>
