@@ -1,20 +1,37 @@
 {
   "name": "johnie",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Portfolio for Johnie Hjelm",
-  "author": "Johnie Hjelm",
+  "url": "http://johnie.se",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnie/johnie.se.git"
+  },
+  "author": "Johnie Hjelm <johnie@hjelm.im>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnie/johnie.se/issues"
+  },
+  "homepage": "https://github.com/johnie/johnie.se",
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-concurrent": "^0.5.0",
-    "grunt-contrib-compass": "^0.8.0",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-contrib-uglify": "^0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-ftp-deploy": "^0.1.3",
-    "grunt-modernizr": "^0.5.2",
-    "grunt-plugin-size": "^1.2.0",
-    "grunt-shell": "~0.6.4",
-    "matchdep": "^0.3.0"
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-changed": "^1.2.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-header": "^1.2.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-size": "^1.2.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uncss": "^1.0.2",
+    "gulp-util": "^3.0.6"
   }
 }

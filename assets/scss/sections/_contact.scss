@@ -165,7 +165,7 @@
   width: 1.5em;
   height: 1.5em;
   border: none;
-  background: $base-ui-color--light url('images/arrow-right--black.svg') center center no-repeat;
+  background: $base-ui-color--light url('/images/arrow-right--black.svg') center center no-repeat;
   text-indent: -9999px;
   @include vendor(border-radius, 3em);
   -webkit-background-size: 50%;
@@ -175,7 +175,7 @@
   @include vendor(transition, background-color .3s ease);
 
   &:hover{
-    background: $brand-color url('images/arrow-right.svg') center center no-repeat;
+    background: $brand-color url('/images/arrow-right.svg') center center no-repeat;
     -webkit-background-size: 50%;
     background-size: 50%;
   }

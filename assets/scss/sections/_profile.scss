@@ -78,7 +78,7 @@
 }
 
 .profile__image{
-  background: $base-ui-color url('images/johnie_left.png') center top no-repeat;
+  background: $base-ui-color url('/images/johnie_left.png') center top no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   position: absolute;
@@ -87,7 +87,7 @@
   height: 100%;
 
   @include media-query(palm) {
-    background: $base-ui-color url('images/johnie_left.png') center -100px no-repeat;
+    background: $base-ui-color url('/images/johnie_left.png') center -100px no-repeat;
     -webkit-background-size: 100%;
     background-size: 100%;
     position: relative !important;
@@ -95,7 +95,7 @@
   }
 
   @include media-query(lap) {
-    background: $base-ui-color url('images/johnie_left.png') center -250px no-repeat;
+    background: $base-ui-color url('/images/johnie_left.png') center -250px no-repeat;
     -webkit-background-size: 100%;
     background-size: 100%;
     position: relative !important;

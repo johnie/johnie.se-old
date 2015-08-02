@@ -12,13 +12,13 @@ This repo is mostly for me. I, like many of you, host my site on GitHub for reas
 ### Points of Interest
 
 Some things you may find interesting:
-* [Uncompressed Sass files](https://github.com/johnie/johnie.se/tree/master/style)
-* [Gruntfile.js](https://github.com/johnie/johnie.se/blob/master/Gruntfile.js) – the Grunt configuration used to help me develop locally.
+* [Uncompressed Sass files](https://github.com/johnie/johnie.se/tree/master/assets/scss)
+* [Gulpfile.js](https://github.com/johnie/johnie.se/blob/master/Gulpfile.js) – the Gulp configuration used to help me develop locally.
 
 ### Workflow
 The source code here on Github is all good and well, but there’s still a vital missing ingredient between here and the live site. Here’s a short overview of how I modify and build my site;
 
-1. [Grunt](http://gruntjs.com/) is always running when coding or designing. It handles a few things, as defined in my Gruntfile, namely: — [Sass](http://sass-lang.com/) to make authoring my stylesheets easier together with [CssWizardry](http://csswizardry.com/)'s awesome framework [Inuit.css](http://inuitcss.com/) — [Uglify](https://github.com/gruntjs/grunt-contrib-uglify) to minify the JS-files with source maps — [Jekyll](http://jekyllrb.com/) to build my site into static HTML files - Finally, a “watch” task with livereload to watch my files for changes and perform the above tasks.
+1. [Gulp](http://gulpjs.com/) is always running when coding or designing. It handles a few things, as defined in my Gulpfile, namely: — [Sass](http://sass-lang.com/) to make authoring my stylesheets easier together with [CssWizardry](http://csswizardry.com/)'s awesome framework [Inuit.css](http://inuitcss.com/) — [Uglify](https://github.com/terinjokes/gulp-uglify) to minify the JS-files with source maps — [Jekyll](http://jekyllrb.com/) to build my site into static HTML files - Finally, a “watch” task with [Browser Sync](http://www.browsersync.io/) to watch my files for changes and perform the above tasks.
 
 2. Jekyll builds my site in a <code>_site</code> directory, which is ignored by Git so that I don’t end up with duplicate content and unnecessary bloat on Github.
 
