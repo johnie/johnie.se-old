@@ -4,7 +4,7 @@
 
 .footer{
   padding-top: 20%;
-  background: $base-ui-color url('images/footer_bg.png') bottom center no-repeat;
+  background: $base-ui-color url('/images/footer_bg.png') bottom center no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
@@ -18,11 +18,7 @@
     left: 0;
     display: block;
     content: '';
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($base-ui-color), to(rgba(0,0,0,0)));
-    background-image: -webkit-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
-    background-image: -moz-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
-    background-image: -ms-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
-    background-image: -o-linear-gradient(top, $base-ui-color, rgba(0,0,0,0));
+    background-image: linear-gradient($base-ui-color, rgba(0, 0, 0, 0));
   }
 
   @include media-query(palm) {
@@ -149,7 +145,7 @@ $social-icons: twitter #1BB2E9, facebook #3C599B, github #323031, linkedin #0064
   $color: nth($icons, 2);
 
   .social-item--#{$icon}{
-    background: $color url("images/#{$icon}.svg") center center no-repeat;
+    background: $color url("/images/#{$icon}.svg") center center no-repeat;
     -webkit-background-size: 50%;
     background-size: 50%;
     @include vendor(transition, background-color .2s ease);

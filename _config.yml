@@ -13,7 +13,7 @@ timezone: Europe/Stockholm
 
 # Includes / Exclude
 include: ['.htaccess']
-exclude: ['README.md', 'node_modules/', 'Gruntfile.js', 'package.json', 'config.rb']
+exclude: ['README.md', 'node_modules/', 'Gulpfile.js', 'package.json', 'config.rb', 'assets/js', 'assets/scss', 'assets/images']
 
 # Collections
 collections:
