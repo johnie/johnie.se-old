@@ -4,7 +4,10 @@
 
 .services{
   padding-bottom: 90%;
-  background:$base-ui-color url('/images/johnie_content.png') bottom center no-repeat;
+  // background:$base-ui-color url('/images/johnie_content.png') bottom center no-repeat;
+  background-color: $base-ui-color;
+  background-position: bottom center;
+  background-repeat: no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
   position: relative;

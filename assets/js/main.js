@@ -129,4 +129,12 @@ function contactForm() {
     e.preventDefault();
     $form.promin('next');
   });
+
+  /**
+   * ReSrcit
+   */
+
+  resrc.ready(function () {
+    resrc.run();
+  });
 }

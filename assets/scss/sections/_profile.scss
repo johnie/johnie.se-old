@@ -78,7 +78,10 @@
 }
 
 .profile__image{
-  background: $base-ui-color url('/images/johnie_left.jpg') center top no-repeat;
+  // background: $base-ui-color url('/images/johnie_left.jpg') center top no-repeat;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: $base-ui-color;
   -webkit-background-size: cover;
   background-size: cover;
   position: absolute;
@@ -87,7 +90,10 @@
   height: 100%;
 
   @include media-query(palm) {
-    background: $base-ui-color url('/images/johnie_left.jpg') center -100px no-repeat;
+    // background: $base-ui-color url('/images/johnie_left.jpg') center -100px no-repeat;
+    background-position: center -100px;
+    background-repeat: no-repeat;
+    background-color: $base-ui-color;
     -webkit-background-size: 100%;
     background-size: 100%;
     position: relative !important;
@@ -95,7 +101,10 @@
   }
 
   @include media-query(lap) {
-    background: $base-ui-color url('/images/johnie_left.jpg') center -150px no-repeat;
+    // background: $base-ui-color url('/images/johnie_left.jpg') center -150px no-repeat;
+    background-position: center -150px;
+    background-repeat: no-repeat;
+    background-color: $base-ui-color;
     -webkit-background-size: 100%;
     background-size: 100%;
     position: relative !important;

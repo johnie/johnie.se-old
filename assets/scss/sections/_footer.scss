@@ -4,7 +4,10 @@
 
 .footer{
   padding-top: 20%;
-  background: $base-ui-color url('/images/footer_bg.png') bottom center no-repeat;
+  // background: $base-ui-color url('/images/footer_bg.png') bottom center no-repeat;
+  background-color: $base-ui-color;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
